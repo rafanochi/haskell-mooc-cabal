@@ -104,7 +104,7 @@ mapTree f t = todo
 --     ==> (Node 1 Empty
 --                 (Node 3 Empty Empty))
 
-cull :: Eq a => a -> Tree a -> Tree a
+cull :: (Eq a) => a -> Tree a -> Tree a
 cull val tree = todo
 
 ------------------------------------------------------------------------------
@@ -146,7 +146,7 @@ cull val tree = todo
 --                             (Node 1 Empty Empty))
 --                     (Node 3 Empty Empty))   ==>   True
 
-isOrdered :: Ord a => Tree a -> Bool
+isOrdered :: (Ord a) => Tree a -> Bool
 isOrdered = todo
 
 ------------------------------------------------------------------------------
@@ -202,5 +202,5 @@ set path val tree = todo
 --                            (Node 1 Empty Empty))
 --                    (Node 5 Empty Empty))                     ==>  Just [StepL,StepR]
 
-search :: Eq a => a -> Tree a -> Maybe [Step]
+search :: (Eq a) => a -> Tree a -> Maybe [Step]
 search = todo
